@@ -1,0 +1,3 @@
+backend: aws
+bucket: eaf-test-dstack
+region: us-east-2

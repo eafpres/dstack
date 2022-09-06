@@ -1,0 +1,14 @@
+workflows:
+  - name: "read_data"
+    provider: bash
+    deps:
+      - tag: just_testing
+    python: 3.8
+    commands:
+      - pip install requirements.txt
+      - python code/read_data.py
+    artifacts: 
+      - path: checkpoint
+    resources:
+      interruptible: true
+      gpu: 1
