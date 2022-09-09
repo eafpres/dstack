@@ -2,7 +2,7 @@ workflows:
   - name: "read_data"
     provider: bash
     deps:
-      - tag: just_testing
+      - tag: test-dstack-data
     python: 3.8
     commands:
       - pip install requirements.txt
@@ -10,5 +10,5 @@ workflows:
     artifacts: 
       - path: checkpoint
     resources:
-      interruptible: true
-      gpu: 1
+      interruptible: false
+      gpu: 0
