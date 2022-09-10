@@ -12,7 +12,7 @@ import pandas as pd
 #
 #%% data
 #
-data = pd.read_csv('https://eaf-test-dstack.s3.amazonaws.com/artifacts/eafpres/dstack/light-otter-1%2C%2C0/data%5Cparabolic_data.csv')
+data = pd.read_csv('data/parabolic_data.csv')
 #
 #%% stats
 #
