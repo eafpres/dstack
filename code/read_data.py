@@ -29,6 +29,10 @@ data = pd.read_csv('data/parabolic_data.csv')
 print('data summary')
 print(data.describe())
 #
+# save summary
+#
+data.describe().to_csv('data_summary.csv', index = None)
+#
 #%% visualize
 #
 fig, ax = plt.subplots(figsize = (9, 9))
