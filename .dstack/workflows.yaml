@@ -8,7 +8,9 @@ workflows:
       - pip install -r requirements.txt
       - python code/read_data.py
     artifacts: 
-      - path: checkpoint
+    artifacts:
+      - path: output
+        mount: true
     resources:
       interruptible: false
       gpu: 0

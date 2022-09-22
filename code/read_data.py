@@ -31,11 +31,11 @@ print(data.describe())
 #
 # save summary
 #
-data.describe().to_csv('data_summary.csv', index = None)
+data.describe().to_csv('output/data_summary.csv', index = None)
 #
 #%% visualize
 #
 fig, ax = plt.subplots(figsize = (9, 9))
 ax.scatter(data['x'], data['y'])
-plt.savefig('parabolic.jpg')
+plt.savefig('output/parabolic.jpg')
 #
