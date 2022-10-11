@@ -31,7 +31,7 @@ print(data.describe())
 #
 # save summary
 #
-data.describe().to_csv('output/data_summary.csv', index = None)
+data.describe().to_csv('output/data_summary.csv')
 #
 #%% visualize
 #
