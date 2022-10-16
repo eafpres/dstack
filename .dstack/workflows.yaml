@@ -13,4 +13,6 @@ workflows:
         mount: true
     resources:
       interruptible: false
-      gpu: 0
+      gpu:
+        memory: 12GB
+        count: 1
