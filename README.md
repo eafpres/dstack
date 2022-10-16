@@ -50,14 +50,20 @@
 > dstack tags add test-dstack-data -a ./data  
 ```
   
+ you should see dometing similar to this in the console  
+   
+```
+Uploading artifact 'data': 100%|████████████████████████████████████████████████████████████████████████| 640/640 [00:01<00:00, 416B/s]
+OK 
+```
  in the cloned repo in the .dstack folder  
  is a workflows .yaml file with a named workflow  
   
 ```
 > dstack run read_data  
-  
 > ...  
 ```
+  
  dstack spins up an AWS EC2, configures it using the requirements.txt  
  then runs the rest of the workflow, in this case running   
  the python script from the code directory  
