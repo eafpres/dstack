@@ -13,19 +13,20 @@
 > dstack init [-t GITHUB_TOKEN | -i SSH_PRIVATE_KEY]  
 ```
   
+ now create a folder, clone the repo, and configure dstack
+  
 ```
 > mkdir dstack_test  
 > cd dstack_test  
 > git clone https://github.com/eafpres/dstack.git  
 > cd dstack  
 > dstack config  
+> ...
 ```
   
  note that dstack uses the .aws credentials on your computer  
- these are in ~/.aws/credentials or c:/users/<your user> /.aws/credentials  
+ these are in ~/.aws/credentials or c:/users/<your user>/.aws/credentials  
  a sample file is provided in the repo  
-  
-> ...   
   
  dstack prompts you for AWS region, AWS S3 bucket name,   
  optional AWS credentials, optional AWS region subnet  
