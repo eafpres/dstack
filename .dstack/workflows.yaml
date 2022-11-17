@@ -13,4 +13,4 @@ workflows:
         mount: true
     resources:
       interruptible: false
-      gpu:0
+      gpu: 0
