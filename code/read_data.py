@@ -19,6 +19,7 @@ my_os = sys.platform
 print('found OS ', my_os)
 print('user is: ', os.environ.get('USER'))
 print('working directory is: ', os.getcwd())
+print('local files: ', os.listdir())
 #
 #%% data
 #
