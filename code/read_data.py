@@ -16,18 +16,14 @@ import os
 #%% configure
 #
 my_os = sys.platform
-print('found OS ', my_os)
+print('found OS: ', my_os)
 print('user is: ', os.environ.get('USER'))
 print('working directory is: ', os.getcwd())
-print('local files: ', os.listdir())
-print('data directory', os.listdir('data'))
+print('data folder:', os.listdir('data'))
 #
 #%% data
 #
-os.chdir('data')
-print(os.listdir())
-os.chdir('..')
-data = pd.read_csv('data/parabolic_data.csv')
+data = pd.read_csv('data\\parabolic_data.csv')
 #
 #%% stats
 #
