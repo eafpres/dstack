@@ -20,10 +20,11 @@ print('found OS ', my_os)
 print('user is: ', os.environ.get('USER'))
 print('working directory is: ', os.getcwd())
 print('local files: ', os.listdir())
+print('data directory', os.listdir('data')
 #
 #%% data
 #
-data = pd.read_csv('/../data/parabolic_data.csv')
+data = pd.read_csv('/data/parabolic_data.csv')
 #
 #%% stats
 #
