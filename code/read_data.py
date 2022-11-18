@@ -23,7 +23,8 @@ print('data folder:', os.listdir('data'))
 #
 #%% data
 #
-data = pd.read_csv('data\\parabolic_data.csv')
+os.chdir('data')
+data = pd.read_csv('\\parabolic_data.csv')
 #
 #%% stats
 #
@@ -32,6 +33,7 @@ print(data.describe())
 #
 # save summary
 #
+os.chdir('..')
 data.describe().to_csv('output/data_summary.csv')
 #
 #%% visualize
