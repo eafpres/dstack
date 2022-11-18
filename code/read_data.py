@@ -26,7 +26,8 @@ print('data directory', os.listdir('data'))
 #
 os.chdir('data')
 print(os.listdir())
-data = pd.read_csv('\\parabolic_data.csv')
+os.chdir('..')
+data = pd.read_csv('data/parabolic_data.csv')
 #
 #%% stats
 #
