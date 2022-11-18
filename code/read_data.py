@@ -24,7 +24,9 @@ print('data directory', os.listdir('data'))
 #
 #%% data
 #
-data = pd.read_csv('/data/parabolic_data.csv')
+os.chdir('data')
+os.listdir()
+data = pd.read_csv('parabolic_data.csv')
 #
 #%% stats
 #
@@ -39,7 +41,7 @@ data.describe().to_csv('output/data_summary.csv')
 #
 fig, ax = plt.subplots(figsize = (9, 9))
 ax.scatter(data['x'], data['y'])
-plt.savefig('output/parabolic.jpg')
+plt.savefig('/../output/parabolic.jpg')
 #
 print('add print to test git')
 #
