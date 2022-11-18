@@ -22,7 +22,7 @@ print('working directory is: ', os.getcwd())
 #
 #%% data
 #
-data = pd.read_csv('data/parabolic_data.csv')
+data = pd.read_csv('/../data/parabolic_data.csv')
 #
 #%% stats
 #
