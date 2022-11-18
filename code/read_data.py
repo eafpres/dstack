@@ -20,7 +20,7 @@ print('found OS ', my_os)
 print('user is: ', os.environ.get('USER'))
 print('working directory is: ', os.getcwd())
 print('local files: ', os.listdir())
-print('data directory', os.listdir('data')
+print('data directory', os.listdir('data'))
 #
 #%% data
 #
