@@ -134,7 +134,7 @@ OK
 ```
   
  after completion, you can inspect the bucket and   
- within the path bucket/artifacts/user/repo/run/output  
+ within the path bucket/artifacts/repo_loc/user/repo/run/output  
  and see the files created  
  note that here bucket is the bucket name you specified  
  artifacts folder is created by dstack  
