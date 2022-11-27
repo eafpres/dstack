@@ -25,7 +25,7 @@
 ```
   
  note that dstack uses the .aws credentials on your computer  
- these are in ~/.aws/credentials or c:/users/<your user>/.aws/credentials  
+ these are in ~/.aws/credentials or c:/users/\<your user\>/.aws/credentials  
  a sample file is provided in the repo  
   
  dstack prompts you for AWS region, AWS S3 bucket name,   
